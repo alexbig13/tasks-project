@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/Assets/css/myCss.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Task Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row text-center">
+        <h1>My Task Board</h1>
+      </div>
+      <div class="row">
+        <div class="form-container">
+          <form class="myForm">
+            <div class="d-flex justify-content-around">
+              <div class="mb-3">
+                <label for="taskId" class="form-label">Enter Your Task</label>
+                <input type="text" class="form-control" id="TaskId" required />
+              </div>
+              <div class="mb-3">
+                <label for="dateId" class="form-label"
+                  >Enter Date Of Task</label
+                >
+                <input type="date" class="form-control" id="dateId" required />
+              </div>
+              <div class="mb-3">
+                <label for="timeId" class="form-label"
+                  >Enter Time Of Task</label
+                >
+                <input type="time" class="form-control" id="timeId" required />
+              </div>
+            </div>
+            <div class="d-flex justify-content-around">
+              <button id="addBtnId" type="button" class="btn btn-success">
+                Add Task
+              </button>
+              <button id="saveBtnId" type="button" class="btn btn-success">
+                Save Tasks
+              </button>
+              <button id="clearBtnId" type="button" class="btn btn-danger">
+                Clear Task
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="result" id="result"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/Assets/javascript/task.js"></script>
+    <script src="/Assets/javascript/myJs.js"></script>
+  </body>
+</html>

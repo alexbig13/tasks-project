@@ -1,0 +1,70 @@
+@font-face {
+  font-family: myFont;
+  src: url(/Assets/fonts/AGYTI\ JINNY.ttf);
+}
+.container > .row > h1 {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-family: myFont;
+}
+.myForm {
+  background-image: url(/Assets/images/background3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+.baseContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 8px;
+}
+.baseContainerImage {
+  background-image: url(/Assets/images/background4.jpg);
+}
+
+.deleteBtn {
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+.spanBtn {
+  margin-left: 170px;
+  margin-bottom: 15px;
+}
+.constStyleBtn {
+  border: none;
+}
+.result {
+  display: flex;
+  gap: 20px;
+}
+.pInfo {
+  width: 200px;
+  height: 100px;
+  overflow: auto;
+  overflow-wrap: break-word;
+  letter-spacing: 1px;
+}
+.fadeIn {
+  animation: fadeIn 2s;
+}
+.fadeOut {
+  animation: fadeOut 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
